@@ -10,20 +10,31 @@ const IndexPage = ( {data} ) => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <p>{data.site.siteMetadata.description}</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/about">Go to page 2</Link>
+    <h4>Всього постів на блозі: {data.allMarkdownRemark.totalCount}</h4>
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+      <div key={node.id}>
+          <h3>{node.frontmatter.title}{" "}— {node.frontmatter.date}</h3>
+          <p>{node.excerpt}</p>
+      </div>
+      ))}
+
+    <Link to="/about">Про блоґ</Link>
   </Layout>
 )
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        description
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
       }
     }
   }
