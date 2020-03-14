@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `@bebyx блоґ`,
+    title: `@bebyx`,
     description: `Блоґ на Gatsby.`,
     author: `@bebyx`,
   },
@@ -13,8 +13,19 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 720,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

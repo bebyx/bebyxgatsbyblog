@@ -7,11 +7,13 @@ import SEO from "../components/seo"
 
 const IndexPage = ( {data} ) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title={data.site.siteMetadata.title} />
     <h4>Всього постів на блозі: {data.allMarkdownRemark.totalCount}</h4>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
-          <Link to={node.fields.slug}>
+          <Link style={{
+            textDecoration: `none`
+          }} to={node.fields.slug}>
             <h2>{node.frontmatter.title}{" "}— {node.frontmatter.date}</h2>
           </Link>
           <p>{node.excerpt}</p>
@@ -39,6 +41,11 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

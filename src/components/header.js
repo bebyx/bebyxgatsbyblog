@@ -9,21 +9,22 @@ function Header({ siteTitle }) {
   function isActive({isCurrent}) {
     return isCurrent ?
     { dangerouslySetInnerHTML: {__html: `<h1>${siteTitle}</h1>`} } :
-    { dangerouslySetInnerHTML: {__html: `<strong>${siteTitle}</strong>` } }
+    { dangerouslySetInnerHTML: {__html: `${siteTitle}` } }
   }
 
   return(
     <header
       style={{
-        background: `rebeccapurple`,
+        background: `green`,
         marginBottom: `1.45rem`,
       }}
     >
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+        //  maxWidth: 720,
           padding: `1.45rem 1.0875rem`,
+          textAlign: `center`
         }}
       >
         <>
@@ -32,10 +33,11 @@ function Header({ siteTitle }) {
             class="header"
             style={{
               color: `white`,
-              textDecoration: `none`
+              textDecoration: `none`,
             }}
             getProps={isActive}
           />
+          <p></p>
         </>
       </div>
     </header>
