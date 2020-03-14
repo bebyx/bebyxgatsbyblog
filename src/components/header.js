@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
+import { Link, Match } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { graphql } from "gatsby"
 
 function Header({ siteTitle }) {
+
   return(
     <header
       style={{
@@ -25,19 +25,18 @@ function Header({ siteTitle }) {
               color: `white`,
               textDecoration: `none`,
             }}
-          >
-            {siteTitle}
-          </Link>
+            getProps={isActive}
+          />
         </h1>
-      {if ("/" === "/") {
-        <p>Test</p>
-      }}
+        <p>{siteTitle}</p>
       </div>
     </header>
   )
 }
 
-
+function isActive({isCurrent}) {
+  return isCurrent ? { dangerouslySetInnerHTML: {__html: '<h1>wow</h1>'} } : null
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
