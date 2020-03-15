@@ -7,7 +7,7 @@ function Header({ siteMetadata }) {
   function isActive({isCurrent}) {
     return isCurrent ?
     { dangerouslySetInnerHTML: {__html: `<h1>${siteMetadata.title}</h1>`} } :
-    { dangerouslySetInnerHTML: {__html: `<span class="header">${siteMetadata.title}</span>` } }
+    { dangerouslySetInnerHTML: {__html: `<span class="header-blog-title">${siteMetadata.title}</span>` } }
   }
 
   return(

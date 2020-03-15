@@ -1,4 +1,4 @@
-.header {
+.header-blog-title {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -73,5 +73,23 @@ footer a:active{
 }
 
 footer a:visited{
+  color: green;
+}
+
+a.readmore:link{
+  color: green;
+}
+
+a.readmore:hover{
+  background-color: green;
+  color: white !important;
+}
+
+a.readmore:active{
+  background-color: yellow;
+  color: green !important;
+}
+
+a.readmore:visited{
   color: green;
 }
