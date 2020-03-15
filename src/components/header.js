@@ -41,6 +41,18 @@ function Header({ siteMetadata }) {
           }}>
           {siteMetadata.description}
           </p>
+          <p>
+            <nav>
+              <ul class="nav-list">
+                <li>
+                  <Link to="/">Фасад</Link>
+                </li>
+                <li>
+                  <Link to="/pro-blog">Про блоґ</Link>
+                </li>
+              </ul>
+            </nav>
+          </p>
         </>
       </div>
     </header>
@@ -48,12 +60,16 @@ function Header({ siteMetadata }) {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteMetadata: PropTypes.object,
+
 
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteMetadata: {
+    title : ``,
+    description: ``,
+  },
 }
 
 export default Header
