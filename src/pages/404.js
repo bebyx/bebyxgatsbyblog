@@ -1,13 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <SEO title="404: Сторінку не знайдено" />
+    <h1>Сторінку не знайшли</h1>
+    <p>Ви зайшли на веб-адресу, під якою нема сторінки. Можливо сторінка видалена. Або не створена.</p>
+    <p>Спробуйте пошукати, що вам треба, звідси:</p>
+    <ul>
+      <li><Link to="/">Фасад</Link></li>
+      <li><Link to="/">Про блоґ</Link></li>
+    </ul>
   </Layout>
 )
 
