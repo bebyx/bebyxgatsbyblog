@@ -6,11 +6,12 @@
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.61rem;
+  margin-bottom: 1.61rem !important;
   color: inherit;
   font-family: 'Helvetica',sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 2rem !important;
+  font-size: 2rem;
   line-height: 1.1;
+  display: block;
 }
