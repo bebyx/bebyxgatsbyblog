@@ -62,3 +62,20 @@ article a:visited, footer a:visited, nav a:visited,
 a.readmore:visited, .special-page a:visited{
   color: green;
 }
+
+button.btn-to-top {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 14px 28px;
+  font-size: "large";
+  cursor: pointer;
+}
+
+button.btn-to-top:hover {
+  background-color: darkgreen;
+}
+
+button.btn-to-top:active {
+  background-color: lime;
+}

@@ -37,10 +37,24 @@ const Layout = ({ children }) => {
         class="link-style"
       >
         <main>{children}</main>
-        <footer style={{textAlign: `right`, fontSize: `small`,}}>
+        <footer>
             <hr/>
-            © {new Date().getFullYear()} — <a href="https://github.com/bebyx/bblog"
-              target="_blank" rel="noopener noreferrer">bblog</a> від <b>bebyx</b> за допомогою Gatsby
+            <ul style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}>
+              <li style={{alignSelf: `flex-start` }}>
+                <button class="btn-to-top" onClick={ () => { window.scrollTo(0, 0) } }>Нагору</button>
+              </li>
+              <li style={{fontSize: `small`}}>
+                © {new Date().getFullYear()} — <a href="https://github.com/bebyx/bblog"
+                target="_blank" rel="noopener noreferrer">bblog</a> від <b>bebyx</b> за допомогою Gatsby
+              </li>
+
+            </ul>
         </footer>
       </div>
     </>
