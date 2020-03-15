@@ -4,6 +4,8 @@ A small blog built with Gatsby.
 
 Actually, a cleaned-up in one cases and extended in other cases version of default Gatsby Starter Blog builder.
 
+**bblog** stands for *blazing blog*, *bebyx's blog* or whatever.
+
 ## 1. Clone.
 ## 2. Install dependencies.
 
