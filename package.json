@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bblog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Блоґ побудований на Gatsby і React.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "bebyx <artem.bebyk@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
