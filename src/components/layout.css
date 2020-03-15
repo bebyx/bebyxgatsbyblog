@@ -21,13 +21,14 @@ ul.nav-list li{
   padding: 0.5rem;
 }
 
-header a {
+header nav a {
   color: green;
   background-color: white;
 }
 
-header a:hover {
+header nav a:hover {
   background-color: yellow;
+  color: green !important;
 }
 
 a.article-title-link {
