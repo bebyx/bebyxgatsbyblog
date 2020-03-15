@@ -8,7 +8,7 @@
   padding-top: 0;
   margin-bottom: 1.61rem !important;
   color: inherit;
-  font-family: 'Helvetica',sans-serif;
+  font-family: 'Helvetica Neue','Helvetica',sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
@@ -35,61 +35,25 @@ a.article-title-link {
   color: hsla(0,0%,0%,0.8);
  }
 
- a.article-title-link:hover {
+a.article-title-link:hover {
    text-decoration: none;
    color: gray;
   }
 
-article main a:link{
+article a:link, footer a:link, a.readmore:link, .special-page a:link{
   color: green;
 }
 
-article a:hover{
+article a:hover, footer a:hover, a.readmore:hover, .special-page a:hover{
   background-color: green;
   color: white !important;
 }
 
-article a:active{
+article a:active, footer a:active, a.readmore:active, .special-page a:active{
   background-color: yellow;
   color: green !important;
 }
 
-article a:visited{
-  color: green;
-}
-
-footer a:link{
-  color: green;
-}
-
-footer a:hover{
-  background-color: green;
-  color: white !important;
-}
-
-footer a:active{
-  background-color: yellow;
-  color: green !important;
-}
-
-footer a:visited{
-  color: green;
-}
-
-a.readmore:link{
-  color: green;
-}
-
-a.readmore:hover{
-  background-color: green;
-  color: white !important;
-}
-
-a.readmore:active{
-  background-color: yellow;
-  color: green !important;
-}
-
-a.readmore:visited{
+article a:visited, footer a:visited, a.readmore:visited, .special-page a:visited{
   color: green;
 }

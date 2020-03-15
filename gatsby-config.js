@@ -3,9 +3,12 @@ module.exports = {
     title: `@bebyx`,
     description: `Блоґ побудований на Gatsby і React.`,
     author: `@bebyx`,
+    siteUrl: `https://www.example.com`, // This should be set for SEO plugins to work properly.
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

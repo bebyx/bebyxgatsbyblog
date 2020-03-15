@@ -15,7 +15,7 @@ const IndexPage = ( {data} ) => (
           <Link class="article-title-link" to={node.fields.slug}>
             <h2>{node.frontmatter.title}</h2>
           </Link>
-          <span style={{color: `silver`}}>— {node.frontmatter.date}</span>
+          <span style={{color: `silver`}}> — {node.frontmatter.date}</span>
           <p>{node.excerpt}</p>
           <p><Link class="readmore" to={node.fields.slug}>Читати далі</Link></p>
       </div>
