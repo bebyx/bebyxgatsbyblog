@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
         <footer style={{textAlign: `right`, fontSize: `small`,}}>
             <hr/>
             © {new Date().getFullYear()} — <a href="https://github.com/bebyx/bblog"
-              target="_blank">bblog</a> від <b>bebyx</b> за допомогою Gatsby
+              target="_blank" rel="noopener noreferrer">bblog</a> від <b>bebyx</b> за допомогою Gatsby
         </footer>
       </div>
     </>

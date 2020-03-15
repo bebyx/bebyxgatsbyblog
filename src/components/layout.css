@@ -40,20 +40,24 @@ a.article-title-link:hover {
    color: gray;
   }
 
-article a:link, footer a:link, a.readmore:link, .special-page a:link{
+article a:link, footer a:link, nav a:link,
+a.readmore:link, .special-page a:link{
   color: green;
 }
 
-article a:hover, footer a:hover, a.readmore:hover, .special-page a:hover{
+article a:hover, footer a:hover, nav a:hover,
+a.readmore:hover, .special-page a:hover{
   background-color: green;
   color: white !important;
 }
 
-article a:active, footer a:active, a.readmore:active, .special-page a:active{
+article a:active, footer a:active, nav a:active,
+a.readmore:active, .special-page a:active{
   background-color: yellow;
   color: green !important;
 }
 
-article a:visited, footer a:visited, a.readmore:visited, .special-page a:visited{
+article a:visited, footer a:visited, nav a:visited,
+a.readmore:visited, .special-page a:visited{
   color: green;
 }
