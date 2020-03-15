@@ -80,3 +80,8 @@ button.btn-to-top:hover {
 button.btn-to-top:active {
   background-color: lime;
 }
+
+::selection {
+  background-color: lime;
+  color: white;
+}
