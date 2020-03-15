@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Про блоґ" />
     <h1>Сторінка про блоґ</h1>
     <p>Ласкаво прошу до блоґу. Блоґ побудований на Gatsby і відповідно React.</p>
   </Layout>

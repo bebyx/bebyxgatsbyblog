@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
           maxWidth: 720,
           padding: `0 1.0875rem 1.45rem`,
         }}
+        class="link-style"
       >
         <main>{children}</main>
         <footer style={{textAlign: `right`, fontSize: `small`,}}>
