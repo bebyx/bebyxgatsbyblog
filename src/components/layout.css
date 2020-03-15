@@ -24,6 +24,7 @@ ul.nav-list li{
 header nav a {
   color: green;
   background-color: white;
+  font-weight: bold;
 }
 
 header nav a:hover {
