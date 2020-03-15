@@ -39,3 +39,39 @@ a.article-title-link {
    text-decoration: none;
    color: gray;
   }
+
+article main a:link{
+  color: green;
+}
+
+article a:hover{
+  background-color: green;
+  color: white !important;
+}
+
+article a:active{
+  background-color: yellow;
+  color: green !important;
+}
+
+article a:visited{
+  color: green;
+}
+
+footer a:link{
+  color: green;
+}
+
+footer a:hover{
+  background-color: green;
+  color: white !important;
+}
+
+footer a:active{
+  background-color: yellow;
+  color: green !important;
+}
+
+footer a:visited{
+  color: green;
+}

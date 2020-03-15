@@ -7,11 +7,11 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO title={post.frontmatter.title + " - " + data.site.siteMetadata.title} description={post.excerpt} />
-      <div>
+      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <article>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </article>
     </Layout>
   )
 }
@@ -24,11 +24,6 @@ export const query = graphql`
         title
       }
       excerpt
-    }
-    site {
-      siteMetadata {
-        title
-      }
     }
   }
 `
