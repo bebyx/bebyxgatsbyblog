@@ -20,8 +20,6 @@ const IndexPage = ( {data} ) => (
           <hr/>
       </div>
       ))}
-
-    <Link to="/about">Про блоґ</Link>
   </Layout>
 )
 

@@ -12,7 +12,7 @@ const NotFoundPage = () => (
     <p>Спробуйте пошукати, що вам треба, звідси:</p>
     <ul>
       <li><Link to="/">Фасад</Link></li>
-      <li><Link to="/">Про блоґ</Link></li>
+      <li><Link to="/pro-blog">Про блоґ</Link></li>
     </ul>
   </Layout>
 )
