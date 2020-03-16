@@ -9,27 +9,25 @@ import { Link, graphql } from "gatsby"
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} пост${
-    totalCount === 1 ? "" : "и"
-  } з теґом "${tag}"`
+  const tagHeader = `Постів з теґом "${tag}": ${totalCount}`
 
   return (
     <Layout>
-      <SEO title={"Теґи"} description={"Теґи"} />
+      <SEO title={`Пости з теґом "${tag}"`} description={`Пости з теґом "${tag}" на блозі ${data.site.siteMetadata.title}`} />
       <div class="special-page">
         <h1>{tagHeader}</h1>
         <ul>
           {edges.map(({ node }) => {
             const { slug } = node.fields
-            const { title } = node.frontmatter
+            const { title, date } = node.frontmatter
             return (
               <li key={slug}>
-                <Link to={slug}>{title}</Link>
+                <Link to={slug}>{title}</Link> — {date}
               </li>
             )
           })}
         </ul>
-        <p><Link to="/tags">Всі теґи</Link></p>
+        <p><Link to="/tags"><b>Всі теґи</b></Link></p>
         </div>
     </Layout>
   )
@@ -75,8 +73,17 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            date(
+              formatString: "DD MMMM, YYYY"
+              locale: "uk_UA"
+            )
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
