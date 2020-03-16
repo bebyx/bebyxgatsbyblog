@@ -53,7 +53,6 @@ const Layout = ({ children }) => {
                 © {new Date().getFullYear()} — <a href="https://github.com/bebyx/bblog"
                 target="_blank" rel="noopener noreferrer">bblog</a> від <b>bebyx</b> за допомогою Gatsby
               </li>
-
             </ul>
         </footer>
       </div>

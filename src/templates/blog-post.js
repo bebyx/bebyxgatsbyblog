@@ -12,6 +12,7 @@ export default ({ data, pageContext }) => {
       <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
       <article>
         <h1>{post.frontmatter.title}</h1>
+        <span style={{color: `silver`}}> — {post.frontmatter.date}</span>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <nav>
