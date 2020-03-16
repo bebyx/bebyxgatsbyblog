@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 // Utilities
 import kebabCase from "lodash/kebabCase"
 
 // Components
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 const TagsPage = ({
@@ -16,10 +17,10 @@ const TagsPage = ({
     },
   },
 }) => (
-  <div>
-    <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
+  <Layout>
+    <SEO title={`Теґи`} description={`Теґи на блозі ${title}`} />
+    <div class="special-page">
+      <h1>Теґи</h1>
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
@@ -30,7 +31,7 @@ const TagsPage = ({
         ))}
       </ul>
     </div>
-  </div>
+  </Layout>
 )
 
 TagsPage.propTypes = {

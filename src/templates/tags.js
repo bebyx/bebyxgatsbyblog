@@ -27,7 +27,7 @@ const Tags = ({ pageContext, data }) => {
             )
           })}
         </ul>
-        <p><Link to="/tags"><b>Всі теґи</b></Link></p>
+        <p align="center"><Link to="/tags"><b>Всі теґи</b></Link></p>
         </div>
     </Layout>
   )
