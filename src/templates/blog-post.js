@@ -54,7 +54,7 @@ export const query = graphql`
         title
         description
         date(
-          formatString: "MMMM DD, YYYY"
+          formatString: "DD MMMM, YYYY"
           locale: "uk_UA"
         )
       }
