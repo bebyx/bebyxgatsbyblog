@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"5bXu":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Bl7J"),r=a("vrFN");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(r.a,{title:"Про блоґ"}),l.a.createElement("article",null,l.a.createElement("h1",null,"Сторінка про блоґ"),l.a.createElement("p",null,"Ласкаво прошу до блоґу. Блоґ побудований на Gatsby і відповідно React.")))}}}]);
+//# sourceMappingURL=component---src-pages-pro-blog-js-7206742e59daa6cb448a.js.map
