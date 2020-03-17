@@ -73,12 +73,21 @@ button.btn-to-top {
   cursor: pointer;
 }
 
-button.btn-to-top:hover {
+button.btn-tag:hover, button.btn-to-top:hover {
   background-color: darkgreen;
 }
 
-button.btn-to-top:active {
+button.btn-tag:active, button.btn-to-top:active {
   background-color: lime;
+}
+
+button.btn-tag {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 7px 10px;
+  font-size: "large";
+  cursor: pointer;
 }
 
 ::selection {

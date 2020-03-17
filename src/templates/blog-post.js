@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import kebabCase from "lodash/kebabCase"
+
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
@@ -16,6 +18,17 @@ export default ({ data, pageContext }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <nav>
+        <ul class="nav-list">
+          {post.frontmatter.tags.map((item, i) => (
+            <li key={i}>
+              <Link to={`/tags/${kebabCase(item)}/`}>
+                <button class="btn-tag">
+                    {item}
+                </button>
+              </Link>
+            </li>
+          ))}
+        </ul>
         <ul
           style={{
             display: `flex`,
@@ -57,6 +70,7 @@ export const query = graphql`
           formatString: "DD MMMM, YYYY"
           locale: "uk_UA"
         )
+        tags
       }
       excerpt
     }
