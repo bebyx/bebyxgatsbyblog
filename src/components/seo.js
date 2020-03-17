@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title} блоґ`}
+      titleTemplate={`%s | ${site.siteMetadata.title}^блоґ`}
       meta={[
         {
           name: `description`,
