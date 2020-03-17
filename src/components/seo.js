@@ -56,12 +56,12 @@ function SEO({ description, lang, meta, title }) {
           content: `summary`,
         },
         {
-          name: 'twitter:site',
-          content: '@artem_bebyk'
-        }
+          name: `twitter:site`,
+          content: `@artem_bebyk`,
+        },
         {
           name: `twitter:creator`,
-          content: "@artem_bebyk",
+          content: `@artem_bebyk`,
         },
         {
           name: `twitter:title`,
