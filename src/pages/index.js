@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
+import kebabCase from "lodash/kebabCase"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,7 +19,25 @@ const IndexPage = ( {data} ) => (
           </Link>
           <span style={{color: `silver`}}> — {node.frontmatter.date}</span>
           <p>{node.excerpt}</p>
-          <p><Link class="readmore" to={node.fields.slug}>Читати далі</Link></p>
+          <p style={{
+            display: `flex`,
+            justifyContent: `space-between`,
+            flexWrap: `wrap`,
+            }}
+          >
+          <Link class="readmore" to={node.fields.slug}>Читати далі</Link>
+          <ul class="nav-list">
+            {node.frontmatter.tags.map((item, i) => (
+              <li key={i}>
+                <Link to={`/tags/${kebabCase(item)}/`}>
+                  <button class="btn-tag">
+                      {item}
+                  </button>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          </p>
       </div>
       ))}
   </Layout>
@@ -36,6 +56,7 @@ export const query = graphql`
               formatString: "DD MMMM, YYYY",
               locale: "uk-UA"
             )
+            tags
           }
           fields {
             slug

@@ -86,6 +86,7 @@ button.btn-tag {
   background-color: green;
   color: white;
   padding: 7px 10px;
+  margin-bottom: 0.2rem;
   font-size: "large";
   cursor: pointer;
 }
