@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ( {data} ) => (
   <Layout>
-    <SEO title={data.site.siteMetadata.title + " — блоґ про Лінукс, поезію та інше"} />
+    <SEO title={'Блоґ Артем Бебика: Лінукс, поезія, українство'} />
     <h4>Всього постів на блозі: {data.allMarkdownRemark.totalCount}</h4>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
@@ -67,7 +67,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
-        title
+        description
       }
     }
   }

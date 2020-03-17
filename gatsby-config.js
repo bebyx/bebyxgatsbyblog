@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `@bebyx`,
-    description: `Блоґ Артема Бебика - Лінукс, поезія й інша всячина.`,
+    description: `Блоґ Артема Бебика — Лінукс, поезія, українство.`,
     author: `Артем Бебик`,
     siteUrl: `https://bebyx.co.ua`, // This should be set for SEO plugins to work properly.
   },
