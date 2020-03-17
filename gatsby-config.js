@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `@bebyx`,
-    description: `Блоґ побудований на Gatsby і React.`,
-    author: `@bebyx`,
-    siteUrl: `https://www.example.com`, // This should be set for SEO plugins to work properly.
+    description: `Блоґ Артема Бебика - Лінукс, поезія й інша всячина.`,
+    author: `Артем Бебик`,
+    siteUrl: `https://bebyx.co.ua`, // This should be set for SEO plugins to work properly.
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-XXXXXXXXX-X",
+        trackingId: "UA-160860432-1",
       },
     },
     {
@@ -46,7 +46,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/bebyx-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

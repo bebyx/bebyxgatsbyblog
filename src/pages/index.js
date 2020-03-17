@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ( {data} ) => (
   <Layout>
-    <SEO title={data.site.siteMetadata.title} />
+    <SEO title={data.site.siteMetadata.title + "— блоґ про Лінукс, поезію та інше"} />
     <h4>Всього постів на блозі: {data.allMarkdownRemark.totalCount}</h4>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>

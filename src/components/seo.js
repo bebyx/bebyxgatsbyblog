@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.title} блоґ`}
       meta={[
         {
           name: `description`,
@@ -56,8 +56,12 @@ function SEO({ description, lang, meta, title }) {
           content: `summary`,
         },
         {
+          name: 'twitter:site',
+          content: '@artem_bebyk'
+        }
+        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: "@artem_bebyk",
         },
         {
           name: `twitter:title`,
