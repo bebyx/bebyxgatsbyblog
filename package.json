@@ -1,11 +1,11 @@
 {
-  "name": "bblog",
+  "name": "bebyx",
   "private": true,
-  "description": "Блоґ побудований на Gatsby і React.",
+  "description": "Блоґ Артема Бебика.",
   "version": "0.1.0",
   "author": "bebyx <artem.bebyk@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.19.7",
+    "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-feed": "^2.3.28",
     "gatsby-plugin-google-analytics": "^2.1.37",
@@ -27,6 +27,7 @@
     "typography-theme-noriega": "^0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -36,6 +37,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -44,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/bebyx/bebyx.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/bebyx/bebyx.github.io/issues"
   }
 }
