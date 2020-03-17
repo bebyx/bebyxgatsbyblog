@@ -6,7 +6,7 @@ Actually, a cleaned-up in one cases and extended in other cases version of defau
 
 **bblog** stands for *blazing blog*, *bebyx's blog* or whatever.
 
-## 1. Clone.
+## 1. Fork & Clone.
 ## 2. Install dependencies.
 
 You should run this command in the root of the project's folder:
