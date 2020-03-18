@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@bebyx]]></title><description><![CDATA[Блоґ Артема Бебика - Лінукс, поезія й інша всячина.]]></description><link>https://bebyx.co.ua</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 Mar 2020 22:21:18 GMT</lastBuildDate><item><title><![CDATA[Чи розмовляєш ти українською?]]></title><description><![CDATA[Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам'ять:]]></description><link>https://bebyx.co.ua/mova-test/</link><guid isPermaLink="false">https://bebyx.co.ua/mova-test/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам&apos;ять:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@bebyx]]></title><description><![CDATA[Блоґ Артема Бебика — Лінукс, поезія, українство.]]></description><link>https://bebyx.co.ua</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 14:08:27 GMT</lastBuildDate><item><title><![CDATA[doas — полегшена альтернатива sudo]]></title><description><![CDATA[Якщо ви користуєтеся Лінуксом лише на домашньому комп'ютері, то скоріш за все вам не потрібна уся та розширена функціональність sudo, яка…]]></description><link>https://bebyx.co.ua/doas-alternatyva-sudo/</link><guid isPermaLink="false">https://bebyx.co.ua/doas-alternatyva-sudo/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Якщо ви користуєтеся Лінуксом лише на &lt;strong&gt;домашньому комп&apos;ютері&lt;/strong&gt;, то скоріш за все вам не потрібна уся та розширена функціональність &lt;code&gt;sudo&lt;/code&gt;, яка тримає в собі 30 років історії розвитку проекту.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OpenBSD&lt;/strong&gt;, початково Тед Унанґст, свого часу створили &lt;strong&gt;doas&lt;/strong&gt;, дуже легку утиліту, щоб керувати дозволами користувачів. Як стверджує &lt;a href=&quot;https://github.com/Duncaen/OpenDoas&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;офіційна документація&lt;/a&gt;, &lt;code&gt;doas&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&quot;надає 95% функціональності sudo з дрібкою основної бази коду&quot;.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Далебі, &lt;code&gt;sudo&lt;/code&gt; важить близько 5мб, натомість &lt;code&gt;doas&lt;/code&gt; доходить лише до кількох кілобайтів.&lt;/p&gt;
+&lt;p&gt;Кілька років як &lt;code&gt;doas&lt;/code&gt; вже портована на GNU/Linux і на FreeBSD.&lt;/p&gt;
+&lt;p&gt;Отаман Вочевидячки підказує: щоб користуватися &lt;code&gt;doas&lt;/code&gt;, треба спершу його встановити:&lt;/p&gt;
+&lt;p&gt;Ubuntu/Debian:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;apt install doas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Gentoo:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;emerge -a doas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;FreeBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;pkg install doas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Коли встановилося, треба створити файл конфіґу [tt]doas.conf[/tt], котрий наразі не існує.&lt;/p&gt;
+&lt;p&gt;В Лінуксі цільова директорія для файлу має бути &lt;code&gt;/etc/&lt;/code&gt;, у FreeBSD — &lt;code&gt;/usr/local/etc/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Скористуйтеся текстовим редактором вашого вибору, щоб створити файл. Я користуюся Vim&apos;ом:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;vim /etc/doas.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;або для більш упорядкованого FreeBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;vim /usr/local/etc/doas.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;І додаєте два рядки, щоб активувати дозволи для користувача:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;permit nopass keepenv :wheel
+permit nopass keepenv root as root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Так, усього лиш два! На противагу купі визначень у конфіґурації &lt;code&gt;sudo&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Звісно ж, ваш обраний користувач має бути в групі &lt;code&gt;wheel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Можна додавати й по імені користувача замість імені групи — &lt;code&gt;:bebyx&lt;/code&gt;, приміром.&lt;/p&gt;
+&lt;p&gt;Відтак вводьте команди з &lt;code&gt;doas&lt;/code&gt; попереду замість &lt;code&gt;sudo&lt;/code&gt; — і всьо буде чотко. Наприклад:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;doas emerge -uaDN @world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Якщо не хочете давати безпарольного доступу користувачеві, замість [tt]nopass[/tt] поставте &lt;code&gt;persist&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;permit persist keepenv :wheel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Це ввімкне стандартну в &lt;code&gt;sudo&lt;/code&gt; функцію просити пароля лише вперше за сесію.&lt;/p&gt;
+&lt;p&gt;Докладніше про трюки в &lt;code&gt;doas&lt;/code&gt; можна почитати англійською: &lt;a href=&quot;https://flak.tedunangst.com/post/doas-mastery&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Чи розмовляєш ти українською?]]></title><description><![CDATA[Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам'ять:]]></description><link>https://bebyx.co.ua/mova-test/</link><guid isPermaLink="false">https://bebyx.co.ua/mova-test/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам&apos;ять:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 610px;&quot;
@@ -27,6 +66,4 @@
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Українська мова в Інтернеті]]></title><description><![CDATA[Згідно закону про функціонування української мови як державної, веб-сайти, що діють на території України, зобов'язані за замовченням…]]></description><link>https://bebyx.co.ua/mova-internet/</link><guid isPermaLink="false">https://bebyx.co.ua/mova-internet/</guid><pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Згідно &lt;a href=&quot;https://zakon.rada.gov.ua/laws/show/2704-19&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;закону про функціонування української мови як державної&lt;/a&gt;, веб-сайти, що діють на території України, зобов&apos;язані за замовченням відкривати версію сайту державною мовою для українських IP-адрес.&lt;/p&gt;
-&lt;p&gt;Головне не боятися говорити &quot;неправильно&quot;:&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Py-0qHH9BwE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
