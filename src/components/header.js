@@ -51,6 +51,12 @@ function Header({ siteMetadata }) {
               </ul>
             </nav>
           </p>
+          <span class="nav-links">
+            / <Link to="rss.xml">RSS</Link>{" "}
+            / <a href="https://twitter.com/artem_bebyk" target="_blank"
+              rel="noopener noreferrer">Twitter</a>{" "}
+            /
+          </span>
         </>
       </div>
     </header>

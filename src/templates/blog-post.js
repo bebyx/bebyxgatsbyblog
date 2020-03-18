@@ -15,6 +15,7 @@ export default ({ data, pageContext }) => {
       <article>
         <h1>{post.frontmatter.title}</h1>
         <span style={{color: `silver`}}> — {post.frontmatter.date}</span>
+        <br/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <nav>

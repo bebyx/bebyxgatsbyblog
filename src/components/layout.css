@@ -32,6 +32,17 @@ header nav a:hover {
   color: green !important;
 }
 
+span.nav-links, .nav-links a {
+  color: white;
+  font-size: 90%;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: green;
+  text-decoration: overline;
+}
+
 a.article-title-link {
   text-decoration: none;
   color: hsla(0,0%,0%,0.8);
@@ -94,4 +105,12 @@ button.btn-tag {
 ::selection {
   background-color: lime;
   color: white;
+}
+
+pre, code {
+  background-color: lightyellow;
+}
+
+pre {
+  padding-left: 0.5rem;
 }

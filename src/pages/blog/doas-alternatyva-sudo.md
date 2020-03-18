@@ -31,7 +31,7 @@ FreeBSD:
 pkg install doas
 ```
 
-Коли встановилося, треба створити файл конфіґу [tt]doas.conf[/tt], котрий наразі не існує.
+Коли встановилося, треба створити файл конфіґу `doas.conf`, котрий наразі не існує.
 
 В Лінуксі цільова директорія для файлу має бути `/etc/`, у FreeBSD — `/usr/local/etc/`.
 
@@ -65,7 +65,7 @@ permit nopass keepenv root as root
 doas emerge -uaDN @world
 ```
 
-Якщо не хочете давати безпарольного доступу користувачеві, замість [tt]nopass[/tt] поставте `persist`:
+Якщо не хочете давати безпарольного доступу користувачеві, замість `nopass` поставте `persist`:
 
 ```
 permit persist keepenv :wheel
@@ -73,4 +73,4 @@ permit persist keepenv :wheel
 
 Це ввімкне стандартну в `sudo` функцію просити пароля лише вперше за сесію.
 
-Докладніше про трюки в `doas` можна почитати англійською: <a href="https://flak.tedunangst.com/post/doas-mastery" target="\_blank" rel="noopener noreferrer"></a>
+Докладніше про трюки в `doas` можна почитати англійською: <a href="https://flak.tedunangst.com/post/doas-mastery" target="\_blank" rel="noopener noreferrer">flak.tedunangst.com/post/doas-mastery</a>
