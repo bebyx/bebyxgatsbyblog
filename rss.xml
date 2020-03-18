@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@bebyx]]></title><description><![CDATA[Блоґ Артема Бебика — Лінукс, поезія, українство.]]></description><link>https://bebyx.co.ua</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 15:57:38 GMT</lastBuildDate><item><title><![CDATA[doas — полегшена альтернатива sudo]]></title><description><![CDATA[Якщо ви користуєтеся Лінуксом лише на домашньому комп'ютері, то скоріш за все вам не потрібна уся та розширена функціональність sudo, яка…]]></description><link>https://bebyx.co.ua/doas-alternatyva-sudo/</link><guid isPermaLink="false">https://bebyx.co.ua/doas-alternatyva-sudo/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Якщо ви користуєтеся Лінуксом лише на &lt;strong&gt;домашньому комп&apos;ютері&lt;/strong&gt;, то скоріш за все вам не потрібна уся та розширена функціональність &lt;code&gt;sudo&lt;/code&gt;, яка тримає в собі 30 років історії розвитку проекту.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[@bebyx]]></title><description><![CDATA[Блоґ Артема Бебика — Лінукс, поезія, українство.]]></description><link>https://bebyx.co.ua</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 19:53:15 GMT</lastBuildDate><item><title><![CDATA[doas — полегшена альтернатива sudo]]></title><description><![CDATA[Якщо ви користуєтеся Лінуксом лише на домашньому комп'ютері, то скоріш за все вам не потрібна уся та розширена функціональність sudo, яка…]]></description><link>https://bebyx.co.ua/doas-alternatyva-sudo/</link><guid isPermaLink="false">https://bebyx.co.ua/doas-alternatyva-sudo/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Якщо ви користуєтеся Лінуксом лише на &lt;strong&gt;домашньому комп&apos;ютері&lt;/strong&gt;, то скоріш за все вам не потрібна уся та розширена функціональність &lt;code&gt;sudo&lt;/code&gt;, яка тримає в собі 30 років історії розвитку проекту.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OpenBSD&lt;/strong&gt;, початково Тед Унанґст, свого часу створили &lt;strong&gt;doas&lt;/strong&gt;, дуже легку утиліту, щоб керувати дозволами користувачів. Як стверджує &lt;a href=&quot;https://github.com/Duncaen/OpenDoas&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;офіційна документація&lt;/a&gt;, &lt;code&gt;doas&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&quot;надає 95% функціональності sudo з дрібкою основної бази коду&quot;.&lt;/em&gt;&lt;/p&gt;
@@ -37,33 +37,101 @@ permit nopass keepenv root as root
 &lt;pre&gt;&lt;code&gt;permit persist keepenv :wheel
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Це ввімкне стандартну в &lt;code&gt;sudo&lt;/code&gt; функцію просити пароля лише вперше за сесію.&lt;/p&gt;
-&lt;p&gt;Докладніше про трюки в &lt;code&gt;doas&lt;/code&gt; можна почитати англійською: &lt;a href=&quot;https://flak.tedunangst.com/post/doas-mastery&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;flak.tedunangst.com/post/doas-mastery&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Чи розмовляєш ти українською?]]></title><description><![CDATA[Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам'ять:]]></description><link>https://bebyx.co.ua/mova-test/</link><guid isPermaLink="false">https://bebyx.co.ua/mova-test/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Українська, чуваче, ти нею розмовляєш? Га? Не чую. Можливо це освіжить тобі пам&apos;ять:&lt;/p&gt;
+&lt;p&gt;Докладніше про трюки в &lt;code&gt;doas&lt;/code&gt; можна почитати англійською: &lt;a href=&quot;https://flak.tedunangst.com/post/doas-mastery&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;flak.tedunangst.com/post/doas-mastery&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[З чого почати вивчати англійську мову? 5 порад]]></title><description><![CDATA[З чого почати вивчати англійську мову? Особливо ж — коли з повного нуля. Дуже актуальне питання в Україні, зважаючи, що англійська мова не…]]></description><link>https://bebyx.co.ua/pochaty-vyvchaty-english/</link><guid isPermaLink="false">https://bebyx.co.ua/pochaty-vyvchaty-english/</guid><pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;br/&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 610px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7bec52b90b1aff51e5d87e77f5c28895/073a0/example-image.jpg&quot;
+    href=&quot;/static/900b9809551c119f0bba5d4af68f475b/1d69c/pochaty-vyvchaty-english.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.459016393442624%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAL/2gAMAwEAAhADEAAAAebla8rKNIv/xAAbEAACAQUAAAAAAAAAAAAAAAABAjIABBESNP/aAAgBAQABBQJlKOBscGrnoabS/8QAGBEAAgMAAAAAAAAAAAAAAAAAAQIQERL/2gAIAQMBAT8BK0mo/8QAGBEAAgMAAAAAAAAAAAAAAAAAAQIQESH/2gAIAQIBAT8BXTUf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAECESExUYH/2gAIAQEABj8Co7NGzJI6M//EABwQAQACAQUAAAAAAAAAAAAAAAEAIUERMaGx0f/aAAgBAQABPyFUOQTcTUuIk+J15StUnIZ//9oADAMBAAIAAwAAABBr/wD/xAAXEQEAAwAAAAAAAAAAAAAAAAABEDHw/9oACAEDAQE/EADLCP/EABcRAAMBAAAAAAAAAAAAAAAAAAABIfD/2gAIAQIBAT8QSrQZ/8QAHRABAAMAAgMBAAAAAAAAAAAAAQARITFxYYHB8f/aAAgBAQABPxCnt7Tc9dxVsW87+xEfCat3OXUA6bFFZXESov6M/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 52.400000000000006%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACY0lEQVQozxXLS0/TcAAA8P+2Mulko93WdWu7dWZ0fVPWbl27snUO2HAPGaAjCjEQNCZA8IHejK+DQfQgByMmJmpEMFGQgyYY8a4nUBPjB/DiJ/CgCYbf/QdSDJLhg6qEo34PGfVyHD1YLU9MNBcujClMcEDCRlSyC+mkwiEcQTUmUcx2C1RIpDBVoECeRXIsqknhKOljmAAd7izrPdNlu6RwPOk1aP+QQiUJrMETZw0uhgUk3Mv5OyIwTIdRMCAFShKmS0SYRgk+RMWC+URsWGaPCokjhFchEVvEKkb8/oj5dLxeJ0OwG0bdHi8ER3EU1BS8X8YlOVKO+O6i3vMBRI9S+TjFBZEkG9JTpJXWSIodZsglSx8XmGxOkvl4VxznkxFQ5Q4PSgGlm1qB3Tdo8rrWPZRSrw0dr6jpeY+jwvVg1iYqPaSj4i071yi2mqdatYqqq4mUQoON1ZWFudNNNjLpdsei2O2CNAy3j5VK1UJxDoA1H4VaW7j6Qks3Wr1SSczK5lRtMG1ojKrEwf7+/rv36y2ZtNsP8WxkVU/cAYAOh/t5vgocbz3OmLIQMTabpvTocv3B/EzKPFGv9uZNMaMxB3lne7VgJUohZN4FrbigTahNdEF9+cJkh2/LBQxB9qsPNXn00tS5b993a6OzdtHqs1NGhgd///35tP3cNOkS4d91QntO5xeo7SUAT+4tPpbFNQDOZFm6sBxQNzq4xfVXb2Yv3lQz2b6icpB//f75em1Jz9INCvvsgr46HD+AY68NfLw6s1zJfQDgipUUji2S5g7R+2w6kz/JcGrOti1B17j/2OOQqvEAd3AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Українська мова - тест&quot;
-        title=&quot;Українська мова - тест&quot;
-        src=&quot;/static/7bec52b90b1aff51e5d87e77f5c28895/073a0/example-image.jpg&quot;
-        srcset=&quot;/static/7bec52b90b1aff51e5d87e77f5c28895/4ec73/example-image.jpg 180w,
-/static/7bec52b90b1aff51e5d87e77f5c28895/158ba/example-image.jpg 360w,
-/static/7bec52b90b1aff51e5d87e77f5c28895/073a0/example-image.jpg 610w&quot;
-        sizes=&quot;(max-width: 610px) 100vw, 610px&quot;
+        alt=&quot;З чого почати вивчати англійську мову&quot;
+        title=&quot;З чого почати вивчати англійську мову&quot;
+        src=&quot;/static/900b9809551c119f0bba5d4af68f475b/37523/pochaty-vyvchaty-english.png&quot;
+        srcset=&quot;/static/900b9809551c119f0bba5d4af68f475b/e9ff0/pochaty-vyvchaty-english.png 180w,
+/static/900b9809551c119f0bba5d4af68f475b/f21e7/pochaty-vyvchaty-english.png 360w,
+/static/900b9809551c119f0bba5d4af68f475b/37523/pochaty-vyvchaty-english.png 720w,
+/static/900b9809551c119f0bba5d4af68f475b/1d69c/pochaty-vyvchaty-english.png 750w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;З чого &lt;strong&gt;почати вивчати англійську мову&lt;/strong&gt;? Особливо ж — коли &lt;em&gt;з повного нуля&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Дуже актуальне питання в Україні, зважаючи, що англійська мова не лише відкриває двері до гігантського культурного шару в Інтернеті (англосфера), а й додає можливостей &lt;em&gt;більше заробляти&lt;/em&gt;, працювати на &lt;em&gt;цікавіших роботах&lt;/em&gt;, розширювати бізнес на &lt;em&gt;західні ринки&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Хочу дати кілька інсайтів як &lt;strong&gt;безкоштовно та ефективно почати вивчати англійську мову&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;1. Дуолінґо або аналогічні мобільні застосунки.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Дуолінґо (Duolingo)&lt;/strong&gt; — безкоштовна платформа для вивчення іноземних мов, з великою кількістю курсів для носіїв різних мов. На наше щастя, для носіїв української мови застосунок пропонує &lt;a href=&quot;https://uk.duolingo.com/course/en/uk/Вивчайте-Англійська&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;курс англійської мови&lt;/a&gt;. (Якщо бути точним - американської англійської — на яку саме і є попит.)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1fd2cfdcf983cbd3ecef7067a91c41b5/5b795/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.797250859106526%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABjklEQVQoz3VSy07CUBDtN/gf7v0Bf0F/wZ0bExf6BSRuXZi4AHVNoiuiG40hJkYDhVKQGAO2tUSlpbza3vYe79zSAhImOZ37mDkzc3qVYWDDHL6i6z2BwwUZ51xinQVBgDAMJXzfRxzHWZ4SxQGCyMPYd1B6d+AMxnQlAyhhOp3KpDSZkJ6RZ4xlxSUh5wk7s03UTvMYXN+Km+TMsixoWgO6rqPVaqEpUK1W5f5NrFVVxXA4ysjIFPq0nTsU23u4edzGfeUgG80TwV3TgmF94aPThWX30DFMGKYpixmGIcdflEkSav0Szp43UVR3cfyygQcrlzAKORBPRLTw3Kc5ZqW40G2u8aLeilyGAQq1LeyXFVy2d2CPdXlZ/mY4rIQ4aTKJnM5wVA3QHSWSxAs/Lxs5IZxg4NVR712Be5+zWhHaLsO55uKi0UdBIE/QXfz68RLJUoegKrKa+EzFUOMfuU+CCDS2PweND+oMM7/8vJIOOWnCEMUR0n3qqJf/mJOtvlHlf8tpx2n1dVjJm9kfIQj6XYM/XEUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Почати вивчати англійську з нуля Duolingo&quot;
+        title=&quot;Почати вивчати англійську з нуля Duolingo&quot;
+        src=&quot;/static/1fd2cfdcf983cbd3ecef7067a91c41b5/37523/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png&quot;
+        srcset=&quot;/static/1fd2cfdcf983cbd3ecef7067a91c41b5/e9ff0/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 180w,
+/static/1fd2cfdcf983cbd3ecef7067a91c41b5/f21e7/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 360w,
+/static/1fd2cfdcf983cbd3ecef7067a91c41b5/37523/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 720w,
+/static/1fd2cfdcf983cbd3ecef7067a91c41b5/302a4/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 1080w,
+/static/1fd2cfdcf983cbd3ecef7067a91c41b5/07a9c/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 1440w,
+/static/1fd2cfdcf983cbd3ecef7067a91c41b5/5b795/%D0%BF%D0%BE%D1%87%D0%B0%D1%82%D0%B8-%D0%B2%D0%B8%D0%B2%D1%87%D0%B0%D1%82%D0%B8-%D0%B0%D0%BD%D0%B3%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%83-%D0%B7-%D0%BD%D1%83%D0%BB%D1%8F-Duolingo.png 1455w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Дуолінґо має дуже чіпку й принадну ґеймифіковану (ігровізовану), заточену під мобільне користування систему вивчення мов — зокрема англійської мови. Коли ви забуваєте зробити щоденну норму курсу — нагадує сповіщеннями.&lt;/p&gt;
+&lt;p&gt;Можна за накопичені бали купляти різні цяцьки, а також і доволі корисні штуки.&lt;/p&gt;
+&lt;p&gt;Має Дуолінґо і соціальну систему, — хоча, як на мене, вона реалізована не дуже вдало. Втім, змагальні списки можуть таки простимулювати й далі, й більше вивчати англійську мову — аби вирватися в лідери серед інших користувачів.&lt;/p&gt;
+&lt;p&gt;Я певен, що існують й інші аналогічні сервіси, однак Дуолінґо, гадаю, недаремно вважається топовим і є найпопулярнішим застосунком у такому роді.&lt;/p&gt;
+&lt;h2&gt;2. Дивитися фільми англійською з українськими, а згодом англійськими субтитрами.&lt;/h2&gt;
+&lt;p&gt;Навіть якщо ви знаєте англійську мову на нуль з паличкою (чи й без) — вам треба чимшвидше почати звикати до мови.&lt;/p&gt;
+&lt;p&gt;Моя порада — я й сам так підтягував свою англійську мову — &lt;strong&gt;дивитися фільми в оригіналі англійською&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Для початку, звісно ж, потрібно буде вмикати &lt;em&gt;українські субтитри&lt;/em&gt;, аби петрати, про що йдеться.&lt;/p&gt;
+&lt;p&gt;Згодом дуже раджу переходити на субтитри саме англійською мовою — тобто щоб ви на додаток що чуєте, ще й бачили письмовий варіант.&lt;/p&gt;
+&lt;p&gt;Письмовий варіант сприймається легше, до того ж стане вам у пригоді не лише як посібник з граматики, синтаксису, лексики, а й допоможе зв&apos;язувати докупи те, як носії англійської говорять, і те, як воно пишеться.&lt;/p&gt;
+&lt;p&gt;На вищих рівнях навчання субтитри варто вимикати геть.&lt;/p&gt;
+&lt;p&gt;До речі, окрім суто фільмів, можна дивитися будь-який інший відео-контент, наприклад, на Ютубі. Щоправда, мало до яких відосиків там є субтитри.&lt;/p&gt;
+&lt;p&gt;А от субтитровані фільми англійською доволі просто знайти на &lt;a href=&quot;https://toloka.to/&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;toloka.to&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;3. Двомовні англо-українські книги.&lt;/h2&gt;
+&lt;p&gt;Альтернативний варіант до попереднього пунткту з субтитрованими фільмами — &lt;strong&gt;двомовні книги&lt;/strong&gt;, де в два паралельні стовпчики йдуть оригінал англійською і переклад нашою мовою.&lt;/p&gt;
+&lt;p&gt;Відразу попереджу про одну важливу річ: класика написана доволі складною для початківців (та й не лише них) мовою. А стрибати вище голови не варто — тільки роздрочитеся, що може відбити мотивацію вчити англійську.&lt;/p&gt;
+&lt;p&gt;Тому раджу на початках брати &lt;strong&gt;&lt;em&gt;дитячі книги&lt;/em&gt;&lt;/strong&gt;, де лексика й речення прості, та й історії без якогось подвійного дна, а читаються прямо.&lt;/p&gt;
+&lt;h2&gt;4. Англомовне середовище онлайн.&lt;/h2&gt;
+&lt;p&gt;Це може видатися непосильним завданням людині, яка почала вивчати мову з нуля — але вже зараз треба намагатися спілкуватися з іноземцями.&lt;/p&gt;
+&lt;p&gt;Інтернет дає для цього пречудові можливості. Я, наприклад, дуже багато спілкуюся англійською з іноземцями на американській системі форумів &lt;a href=&quot;https://www.reddit.com/&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;reddit.com&lt;/a&gt;, де можна знайти саб (підфорум) і тему, щоб обговорити, на всяк смак.&lt;/p&gt;
+&lt;p&gt;По-друге, рекомендую також англізувати онлайн-середовище навіть у деталях. Наприклад, перемкнути систему Андроїда (смартфона) на англійську, перевести Фейсбук на англійську версію.&lt;/p&gt;
+&lt;p&gt;Англійська, до речі, є оригінальною мовою більшості програмного забезпечення, тому якщо ви плануєте або вже дотикаєтеся сфери IT — має дуже зарадити з термінологією.&lt;/p&gt;
+&lt;h2&gt;5. Якими словниками користуватися?&lt;/h2&gt;
+&lt;p&gt;Я користуюся ресурсом &lt;a href=&quot;https://e2u.org.ua/&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;e2u.org.ua&lt;/a&gt;, така собі пошукова система, котра шукає по корпусу, що об&apos;єднує кілька різних, зокрема профілевих словників. Це дуже зручно, бо ввівши один запит, можна одним кліком отримати значення з різних дискурсів і галузей.&lt;/p&gt;
+&lt;p&gt;Звісно ж не варто гребувати і стандартним &lt;a href=&quot;https://translate.google.com.ua/?hl=uk&quot; target=&quot;\_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ґуґл-перекладачем&lt;/a&gt;. Над ним весь час працюють волонтери, варіанти перекладів на вістрі сучасності, а головне — що можна перекладати фрази, речення, шматки текстів.&lt;/p&gt;
+&lt;p&gt;По-третє, просто &lt;strong&gt;ґуґліть англійські слова і фрази&lt;/strong&gt;. Так, &lt;em&gt;just google it&lt;/em&gt;. Можете хіба додавати слово &quot;переклад&quot;.&lt;/p&gt;
+&lt;h2&gt;Наостанок&lt;/h2&gt;
+&lt;p&gt;Наостанок хочу побажати &lt;strong&gt;наснаги&lt;/strong&gt; й терплячості. Бо удачі, щоб вивчити англійську, треба мало. Головне бути вмотивовним і розуміти. що за день мову не вивчиш — навіть на базовому рівні.&lt;/p&gt;
+&lt;p&gt;Проте мушу зазначити — і, сподіваюся, втішити, — що коли перейдете рубіж початківця, то далі розвивати знання англійської вже буде набагато легше.&lt;/p&gt;
+&lt;p&gt;Всім добра! Заробляйте більше!&lt;/p&gt;</content:encoded></item></channel></rss>
