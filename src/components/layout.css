@@ -1,3 +1,7 @@
+body {
+  hyphens: auto;
+}
+
 .header-blog-title {
   margin-left: 0;
   margin-right: 0;
@@ -16,7 +20,7 @@
   display: block;
 }
 
-ul.nav-list li{
+ul.nav-list li {
   display: inline !important;
   padding: 0.5rem;
 }
@@ -54,24 +58,24 @@ a.article-title-link:hover {
   }
 
 article a:link, footer a:link, nav a:link,
-a.readmore:link, .special-page a:link{
+a.readmore:link, .special-page a:link {
   color: green;
 }
 
 article a:hover, footer a:hover, nav a:hover,
-a.readmore:hover, .special-page a:hover{
+a.readmore:hover, .special-page a:hover {
   background-color: green;
   color: white !important;
 }
 
 article a:active, footer a:active, nav a:active,
-a.readmore:active, .special-page a:active{
+a.readmore:active, .special-page a:active {
   background-color: yellow;
   color: green !important;
 }
 
 article a:visited, footer a:visited, nav a:visited,
-a.readmore:visited, .special-page a:visited{
+a.readmore:visited, .special-page a:visited {
   color: green;
 }
 

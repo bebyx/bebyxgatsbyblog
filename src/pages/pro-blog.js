@@ -45,7 +45,7 @@ const SecondPage = () => (
       <p>Якщо все ж надаєте перевагу соцмережам:
         то найперше я присутній у Твітері —{" "}
         <a href="https://twitter.com/artem_bebyk" target="_blank"
-        rel="noopener noreferrer">@artem_bebyk</a></p>
+        rel="noopener noreferrer">@artem_bebyk</a>.</p>
 
       <p>Оновлення по розробницьких проектах — <a href="https://github.com/bebyx"
         target="_blank" rel="noopener noreferrer">github.com/bebyx</a>.</p>
