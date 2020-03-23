@@ -118,3 +118,8 @@ pre, code {
 pre {
   padding-left: 0.5rem;
 }
+
+.readmore {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
